@@ -1,0 +1,18 @@
+.card {
+    background-color: #a2f7b8;
+    border-width: 5px;
+    border-color: black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 50px;
+}
+
+.card-content {
+    background-color: #f1f5f2;
+    color: black;
+}
+.cardStyle{
+
+    width :100%
+}

@@ -1,0 +1,49 @@
+<ActionBar>
+    <Label text="{{model.cityData}}"></Label>
+</ActionBar>
+ 
+
+<GridLayout rows="auto,auto *" columns="50, *">
+        
+    <TextField row="0"  col="0"  columnSpan="5" hint="Enter City Name" 
+           [text]='name' 
+           secure="false"
+           keyboardType="email"
+           returnKeyType="send" 
+           color="orangered" 
+           backgroundColor="lightyellow"
+           maxLength="50"
+           [(ngModel)]='city'>   
+    </TextField>
+    <Button text="Add"                  row="1"  col="0" columnSpan="5" (tap)="onTap($event)"></Button>
+    <!--<Label text='{{model.cityData}}'    row="2" col="1" rowSpan="2" columnSpan="5"></Label>-->
+    <Label text="{{model.temperature}}" row="2" col="0"></Label>
+    <Label text="{{model.conditions}}"  row="2" col="1" ></Label>
+   
+
+        
+
+
+    <!--<CardView class="cardStyle" margin="10" elevation="40" radius="1"  >
+        <StackLayout class="cardContent">
+            <TextField row="1"  col="1"  columnSpan="5"  hint="Enter City Name" 
+           [text]='name' 
+           secure="false"
+           keyboardType="email"
+           returnKeyType="send" 
+           color="orangered" 
+           backgroundColor="lightyellow"
+           maxLength="50"
+           [(ngModel)]='city'>   
+    </TextField>
+   <Button text="Add"              row="1"  col="0" columnSpan="5" (tap)="onTap($event)"></Button>
+    <Label text='{{model.cityData}}'    row="2" col="1" rowSpan="2" columnSpan="5"></Label>
+    <Label text="{{model.temperature}}" row="2" col="0"></Label>
+    <Label text="{{model.conditions}}"  row="2" col="1" ></Label>
+    <Button text="Add"              row="3"  col="0" columnSpan="5" (tap)="onTap($event)"></Button>
+
+
+        </StackLayout>
+    </CardView> --> 
+</GridLayout>
+
